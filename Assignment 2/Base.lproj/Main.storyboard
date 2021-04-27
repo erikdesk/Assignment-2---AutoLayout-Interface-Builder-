@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aes-mn-grz" userLabel="Background View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.47450980392156861" green="0.94901960784313721" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Mf5-Jm-psK" userLabel="Orange Stack View">
+                                <rect key="frame" x="199" y="59" width="200" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vKl-48-l6n" userLabel="Left Orange View">
+                                        <rect key="frame" x="8" y="8" width="117.5" height="34"/>
+                                        <color key="backgroundColor" red="0.94509803921568625" green="0.63137254901960782" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VYH-iv-Fd4" userLabel="Right Orange View">
+                                        <rect key="frame" x="133.5" y="8" width="58.5" height="34"/>
+                                        <color key="backgroundColor" red="0.94509803920000002" green="0.63137254899999995" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9137254901960784" green="0.24705882352941178" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="vKl-48-l6n" firstAttribute="leading" secondItem="Mf5-Jm-psK" secondAttribute="leading" constant="8" id="0T7-xd-zjX"/>
+                                    <constraint firstAttribute="width" constant="200" id="Lkl-yI-lx9"/>
+                                    <constraint firstItem="vKl-48-l6n" firstAttribute="width" secondItem="VYH-iv-Fd4" secondAttribute="width" multiplier="2" id="M3V-DN-BLy"/>
+                                    <constraint firstItem="VYH-iv-Fd4" firstAttribute="leading" secondItem="vKl-48-l6n" secondAttribute="trailing" constant="8" symbolic="YES" id="xiP-cM-2P9"/>
+                                    <constraint firstAttribute="height" constant="50" id="zKs-mM-r6p"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eS9-Le-fz0" userLabel="Purple View">
+                                <rect key="frame" x="109" y="797" width="290" height="50"/>
+                                <color key="backgroundColor" red="0.33725490196078434" green="0.31372549019607843" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eVC-gD-oO1"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="46" translatesAutoresizingMaskIntoConstraints="NO" id="Frf-fH-fLz" userLabel="Blue Stack View">
+                                <rect key="frame" x="177" y="161.5" width="60" height="573"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Njj-p0-W52" userLabel="Top Blue View">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <color key="backgroundColor" red="0.30196078431372547" green="0.47843137254901957" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="FvG-Rp-1il"/>
+                                            <constraint firstAttribute="width" constant="60" id="Mmw-as-Dvr"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="npc-8W-KSm" userLabel="Middle Blue View">
+                                        <rect key="frame" x="0.0" y="256.5" width="60" height="60"/>
+                                        <color key="backgroundColor" red="0.30196078430000001" green="0.47843137250000001" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="7H0-jd-oJV"/>
+                                            <constraint firstAttribute="width" constant="60" id="GyU-gW-myZ"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xfv-jv-wEc" userLabel="Bottom Blue View">
+                                        <rect key="frame" x="0.0" y="513" width="60" height="60"/>
+                                        <color key="backgroundColor" red="0.30196078430000001" green="0.47843137250000001" blue="0.83529411760000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="COp-Df-pDf"/>
+                                            <constraint firstAttribute="width" constant="60" id="sBw-8d-FD3"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Frf-fH-fLz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5cH-IH-t9b"/>
+                            <constraint firstItem="Frf-fH-fLz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A85-7k-M7a"/>
+                            <constraint firstItem="aes-mn-grz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FcU-Z0-tRp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mf5-Jm-psK" secondAttribute="trailing" constant="15" id="L5d-qg-K1n"/>
+                            <constraint firstItem="Frf-fH-fLz" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="0.7" id="WFa-dx-A1s"/>
+                            <constraint firstItem="eS9-Le-fz0" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.7" id="iqi-jp-WNc"/>
+                            <constraint firstAttribute="bottom" secondItem="aes-mn-grz" secondAttribute="bottom" id="jr7-IQ-Emv"/>
+                            <constraint firstItem="aes-mn-grz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kak-NA-4Vh"/>
+                            <constraint firstAttribute="trailing" secondItem="aes-mn-grz" secondAttribute="trailing" id="pzR-9o-Bbn"/>
+                            <constraint firstItem="Mf5-Jm-psK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="ukS-rG-mqL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eS9-Le-fz0" secondAttribute="bottom" constant="15" id="vFr-Xe-AeH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eS9-Le-fz0" secondAttribute="trailing" constant="15" id="yvh-sX-ibD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60.869565217391312" y="111.83035714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
